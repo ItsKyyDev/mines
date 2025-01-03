@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miner Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Miner Game</h1>
+    
+    <div id="game-info">
+      <span id="bombs-left">Bombs: 5</span>
+      <span id="game-mode">Mode: Easy</span>
+    </div>
+    
+    <div id="game-board" class="game-board"></div>
+    
+    <div id="bet-container">
+      <input type="number" id="bet" placeholder="Enter your bet" min="1">
+      <button id="start-button">Start Game</button>
+      <button id="cashout-button" disabled>Cashout</button>
+    </div>
+    
+    <div id="status"></div>
+    <div id="multiplier" style="animation: spin-flip 1s infinite;">Multiplier: x1.00</div>
+    
+    <div id="mode-selection">
+      <button id="easy" class="mode-button">Easy</button>
+      <button id="normal" class="mode-button">Normal</button>
+      <button id="hard" class="mode-button">Hard</button>
+      <button id="evil" class="mode-button">Evil</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

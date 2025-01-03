@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .game-cell {
+    width: 50px;
+    height: 50px;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .game-cell:hover {
+    background-color: #ddd;
+  }
+  
+  #start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  #bet-container {
+    margin-top: 20px;
+  }
+  
+  #bet {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #status, #multiplier {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #mode-selection {
+    margin-top: 20px;
+  }
+  
+  .mode-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4776a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .mode-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
